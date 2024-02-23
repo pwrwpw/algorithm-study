@@ -41,19 +41,18 @@
 + 매주 할당된 문제를 해결 했을 경우 PR 규칙에 따라 PR 합니다.
 
 ## ✅ commit 규칙  
-**파일 이름** [플랫폼] 문제이름_문제번호.py
-ex) [BOJ] 베르트랑 공준_4948.py
-
-**commit 메세지** git commit -m "[플랫폼] 문제번호 / 문제등급"
-description: 문제 주소 (option)
+**파일 이름** [플랫폼] 문제이름_문제번호.py  
+ex) [BOJ] 베르트랑 공준_4948.py  
+**commit 메세지** git commit -m "[플랫폼] 문제번호 / 문제등급"  
+description: 문제 주소 (option)  
 ex) git commit -m "[BOJ] 1111 / 브론즈5"
 
-플랫폼 작성법 통일:
-[BOJ] - 백준
-[PGS] - 프로그래머스
-[LTC] - 리트코드
-[CFS] - 코드포스
-[SEA] - 삼성SW Expert Academy
+플랫폼 작성법 통일:  
+[BOJ] - 백준  
+[PGS] - 프로그래머스  
+[LTC] - 리트코드  
+[CFS] - 코드포스  
+[SEA] - 삼성SW Expert Academy  
 [ETC] - 그외
 
 ## ✅ PR 규칙  
