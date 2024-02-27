@@ -1,5 +1,3 @@
-
-
 import sys
 
 # 표준 입력을 빠르게 받기 위해 sys.stdin.readline() 사용
