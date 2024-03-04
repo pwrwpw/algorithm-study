@@ -1,6 +1,5 @@
 # 소수 찾기
 
-
 n = int(input())
 
 m = list(map(int,input().split()))

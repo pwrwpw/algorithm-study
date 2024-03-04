@@ -27,12 +27,12 @@
 
 ## 👨‍👨‍👦‍👦 참여 인원
 ### 스터디장
-+ 김수아 (soapcookie)
++ 이현영 ([eter2](https://github.com/eter2))
 ### 스터디원
-+ 정주영 (SmallGhost)
-+ 김승우 (Kimseungwoo0407)
-+ 현영 (eter2)
-+ 이현석 (pwrwpw)
++ 김수아 ([soapcookie](https://github.com/soapcookie))
++ 정주영 ([SmallGhost](https://github.com/j02j))
++ 김승우 ([Kimseungwoo0407](https://github.com/Kimseungwoo0407))
++ 이현석 ([pwrwpw](https://github.com/pwrwpw))
 
 ## 📗 참여 방법
 + 본 리포지토리를 Fork 합니다.
