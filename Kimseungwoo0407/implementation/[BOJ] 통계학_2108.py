@@ -7,10 +7,22 @@ data = [int(sys.stdin.readline()) for _ in range(n)]
 data.sort()
 mean = round(sum(data)/len(data))
 median = data[len(data)//2]
-a = Counter(data).most_common(2)
-mode = a[0][0]
-if len(a) > 1 and a[0][1] == a[1][1]:
-    mode = a[1][0]
+
+frequency = Counter(data)
+
+
+
+most_common_frequency = frequency.most_common()
+
+
+max_frequency = most_common_frequency[0][1]
+modes = [num for num, freq in most_common_frequency if freq == max_frequency]
+
+if len(modes) > 1:
+    mode = sorted(modes)[1]
+else:
+    mode = modes[0]
+
 print(mean)
 print(median)
 print(mode)
