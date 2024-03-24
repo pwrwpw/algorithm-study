@@ -29,6 +29,5 @@ if K in distance:
   for i in range(1, N+1):
     if distance[i] == K:
       print(i)
-      check = True
 else:
   print(-1)
