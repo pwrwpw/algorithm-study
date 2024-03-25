@@ -1,19 +1,19 @@
 n = int(input())
-card = list(map(int, input().split()))
+cards = list(map(int, input().split()))
 m = int(input())
 mine = list(map(int, input().split()))
 
-card.sort()
+cards.sort()
 
 dic = {}
 
-for x in card:
-  if x in dic :
+for card in cards:
+  if x in dic:
     dic[x] += 1
   else:
     dic[x] = 1
 
-for x in mine:
+for mine in mines:
   if x in dic:
     print(dic[x], end=' ')
   else:
