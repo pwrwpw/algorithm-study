@@ -1,0 +1,26 @@
+import sys
+input = sys.stdin.readline
+
+def is_possible(target):
+    count = 1
+    total = 0
+    for number in numbers:
+        total += number
+        if total > target:
+            total = number
+            count += 1
+    return count <= M
+
+N, M = map(int, input().split())
+numbers = [int(input()) for _ in range(N)]
+
+left = max(numbers)
+right = sum(numbers)
+
+while left < right:
+    mid = (left + right) // 2
+    if is_possible(mid):
+        right = mid
+    else:
+        left = mid + 1
+print(right)
