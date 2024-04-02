@@ -11,4 +11,4 @@ while result <= S:
     if S-result < i:
         break
 
-print(count)
+ print(count)
