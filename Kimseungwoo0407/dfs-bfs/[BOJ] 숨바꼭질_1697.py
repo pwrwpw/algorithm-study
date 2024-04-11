@@ -4,9 +4,7 @@ N, K = map(int, input().split())
 
 visited = [float('inf')] * 100001
 
-count = 0
 move = [-1, 1, 2]
-
 
 def bfs(N, K):
     queue = deque()
