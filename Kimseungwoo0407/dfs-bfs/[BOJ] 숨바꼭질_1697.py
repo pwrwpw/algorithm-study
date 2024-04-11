@@ -28,7 +28,5 @@ def bfs(N, K):
                 visited[nx] = visited[x] + 1
                 queue.append(nx)
 
-    return visited[K]
-
 
 print(bfs(N, K))
