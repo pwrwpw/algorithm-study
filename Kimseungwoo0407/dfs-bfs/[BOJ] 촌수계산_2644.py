@@ -1,31 +1,35 @@
-n = int(input())
+N = int(input())
 
-x,y = map(int,input().split())
+a,b = map(int,input().split())
 
-m = int(input())
+M = int(input())
 
-graph = [[] for _ in range(n+1)]
+graph = [ [] for _ in range(N+1)]
 
-visited = [False] * (n+1)
+visited = [False] * (N+1)
 
-for i in range(m):
-    a,b = map(int,input().split())
-    graph[a].append(b)
-    graph[b].append(a)
+count = 0
 
 result = []
 
-def dfs(x,num):
-    num +=1
-    visited[x] = True
+for i in range(M):
+    x, y = map(int,input().split())
+    graph[x].append(y)
+    graph[y].append(x)
 
-    if x == y:
-        result.append(num)
-    for i in graph[x]:
+def dfs(a,count):
+    count += 1
+
+    if a == b:
+        result.append(count)
+
+    for i in graph[a]:
         if not visited[i]:
-            dfs(i,num)
+            visited[i] = True
+            dfs(i,count)
 
-dfs(x,0)
+dfs(a,count)
+
 if len(result) == 0:
     print(-1)
 else:
