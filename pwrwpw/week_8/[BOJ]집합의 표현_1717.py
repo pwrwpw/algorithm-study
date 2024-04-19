@@ -1,4 +1,8 @@
-n, m = map(int, input().split())
+import sys
+
+sys.setrecursionlimit(1000000)
+
+n, m = map(int, sys.stdin.readline().split())
 parent = [i for i in range(n + 1)]
 
 
@@ -18,7 +22,7 @@ def union(a, b):
 
 
 for _ in range(m):
-    ty, a, b = map(int, input().split())
+    ty, a, b = map(int, sys.stdin.readline().split())
     if ty == 0:
         union(a, b)
     else:
